@@ -1,0 +1,1 @@
+# Django_clq_practice
