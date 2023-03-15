@@ -1,0 +1,43 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <form action="add" method=" GET"align="center">
+        <div className="Report">
+            {% csrf_token %}
+            <h2 align="center">Pic List</h2><br>
+            
+        <table border="1">
+                <tr>
+                    <td>Name</td>
+                    <td>Image</td>
+                    
+                    <td>Description</td>
+                                                     
+                </tr>
+            {% for im in img %}
+                <tr>
+                    <td>{{im.name}}</td>
+                    <td>{{im.img}}></td>
+                    <td>{{im.description}}</td>
+                </tr>                      
+            {% endfor %}
+        </table>
+        </form>
+
+    {% csrf_token %}
+            
+    {% endblock %}
+
+</body>
+</html>

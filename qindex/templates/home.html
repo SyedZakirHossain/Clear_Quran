@@ -1,0 +1,50 @@
+{%extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+        <title>Home_Rayhan</title>   
+    </head>
+    <body>
+        {% block content %}
+
+        <div id="name" style="word-spacing: 30px;">
+            <a href="{% url 'qr' %}">Selective_Topic</a>
+            <a href="{% url 'qrn' %}">Quran_All</a>
+            <a href="{% url 'tl' %}">Topic_List</a>
+        
+        </div>  
+        <section>
+            <div>
+                <img>
+            </div>
+            <div id=""align="center">
+                  <h1> Congratulations....You are Welcome. </h1> 
+                  <h1>Topic wise index of The Holy Book. </h1> 
+               <h1>This work  is  compiled to fulfil my need. </h1> 
+            <h1> Hopefully those who need this, will be satisfied. </h1> 
+            </div>
+            <div id=""align="center">
+                 <!--h1>Not an  web guru but  love to learn new technologies.</h1-->
+            </div>
+                 <div id=""align="center">
+                    <h1>Let us enter into The endless  journey....... </h1>
+                    <h1>............................................. </h1>
+                 </div>
+            
+        </section>
+        
+        {% csrf_token %}
+            
+        {% endblock %}
+    
+    </body>
+</html>
+
+
+
+
