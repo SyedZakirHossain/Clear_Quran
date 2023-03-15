@@ -1,1 +1,2 @@
-# Django_clq_practice
+# clqr
+Django App
