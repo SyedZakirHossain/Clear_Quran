@@ -45,37 +45,16 @@
 </head>
 <body>
        <!--------------------Start navbar------------------------>
-       <nav class="navbar navbar-expand-lg" style="background-color: #FFA07A;">
-        <!--nav class="navbar navbar-expand-lg bg-dark"-->
+       <nav class="navbar sticky-top navbar-light-bg-light" style="background-color: #FFA07A;">
+       <!--nav class="navbar navbar-expand-lg" style="background-color: #FFA07A;">
+        <nav class="navbar navbar-expand-lg bg-dark"-->
           <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'qindex:home' %}">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="{% url 'qindex:ehome' %}">Back</a>
            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            
-            </button>
-            
-            <a class="navbar-brand" href=""> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+           
+          
           </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="navbar-brand">
-                  <a class="nav-link active" href=""></a>
-                </li>
-                
-                <li class="navbar-brand">
-                  <a class="nav-link active" href=" "></a>
-                </li>
-                <li class="navbar-brand">
-                    <a class="nav-link active" href=""></a>
-                  </li>
-              </ul>
-              </div>
+            
           </div>
         </nav>
         <!--------------------End navbar------------------------>   
@@ -92,57 +71,38 @@
             {% csrf_token %}
     <div class="container">
      
-        <h1 align="center">Al Quran Topic List</h1><br>
+        <h1 align="center">Al Quran : Topic List</h1><br>
            
         <h1></h1>
             <div class="d-flex justify-content-center mt-3 login_container">
-                <a  class="btn btn-primary btn" href="{% url 'qindex:tl1' %}">Abraham </a>
+                <a  class="btn btn-primary w-25  btn" href="{% url 'qindex:tl1' %}">Abraham </a>
             </div>  
             
             <div class="d-flex justify-content-center mt-3 login_container">
                
-                <a  class="btn btn-primary btn" href="{% url 'qindex:tl3' %}">Ahad </a>
+                <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl3' %}">Ahad </a>
              </div>
              <div class="d-flex justify-content-center mt-3 login_container">
                
-              <a  class="btn btn-primary btn" href="{% url 'qindex:tl2' %}">Lahab </a>
+              <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl2' %}">Lahab </a>
            </div>
            <div class="d-flex justify-content-center mt-3 login_container">
-            <a  class="btn btn-primary btn" href="{% url 'qindex:tl4' %}">Indecencies </a>
+            <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl4' %}">Indecencies </a>
         </div>  
           <div class="d-flex justify-content-center mt-3 login_container">
-           <a  class="btn btn-primary btn" href="{% url 'qindex:tl3' %}"></a>
+           <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl5' %}">Do and don't</a>
          </div>
          <div class="d-flex justify-content-center mt-3 login_container">
-          <a  class="btn btn-primary btn" href="{% url 'qindex:tl2' %}"> </a>
-         </div> 
-         <div class="d-flex justify-content-center mt-3 login_container">
-          <a  class="btn btn-primary btn" href="{% url 'qindex:tl1' %}"> </a>
-      </div>  
+          <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl6' %}">Not Equal</a>
+        </div>
         <div class="d-flex justify-content-center mt-3 login_container">
-         <a  class="btn btn-primary btn" href="{% url 'qindex:tl3' %}"></a>
-       </div>
-       <div class="d-flex justify-content-center mt-3 login_container">
-        <a  class="btn btn-primary btn" href="{% url 'qindex:tl2' %}"> </a>
-       </div> 
-       <div class="d-flex justify-content-center mt-3 login_container">
-        <a  class="btn btn-primary btn" href="{% url 'qindex:tl1' %}"> </a>
-    </div>  
-      <div class="d-flex justify-content-center mt-3 login_container">
-       <a  class="btn btn-primary btn" href="{% url 'qindex:tl3' %}"></a>
-     </div>
-     <div class="d-flex justify-content-center mt-3 login_container">
-      <a  class="btn btn-primary btn" href="{% url 'qindex:tl2' %}"> </a>
-     </div> 
-     <div class="d-flex justify-content-center mt-3 login_container">
-      <a  class="btn btn-primary btn" href="{% url 'qindex:tl1' %}"> </a>
-  </div>  
-    <div class="d-flex justify-content-center mt-3 login_container">
-     <a  class="btn btn-primary btn" href="{% url 'qindex:tl3' %}"></a>
-   </div>
-   <div class="d-flex justify-content-center mt-3 login_container">
-    <a  class="btn btn-primary btn" href="{% url 'qindex:tl2' %}"> </a>
-   </div> 
+          <a  class="btn btn-primary w-25 btn" href="{% url 'qindex:tl7' %}">Oli and Murshid</a>
+        </div>
+
+
+
+      
+
         </div>
     </form>    
            

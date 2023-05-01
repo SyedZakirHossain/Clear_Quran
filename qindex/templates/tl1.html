@@ -41,7 +41,9 @@
 <body>
     
   
+
       <h2><a href="{% url 'qindex:tl' %}">Back</a></h2><br>
+      <h1>Topic Name : {{ tname }}</h1>
         <form action="add" method=" GET"align="center">
             <div className="Report">
                 {% csrf_token %}
